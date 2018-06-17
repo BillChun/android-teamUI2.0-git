@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">teamUI2.0</string>
-    <string name="NoteTitle">備忘錄</string>
-    <string name="HomeTitle">主頁</string>
-    <string name="SetTitle">設定</string>
-    <string name="ShowTitle">搜索</string>
-    <string name="WeatherTitle">天氣</string>
-</resources>
