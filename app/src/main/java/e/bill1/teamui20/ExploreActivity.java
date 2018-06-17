@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ExploreActivity extends AppCompatActivity {
     private Button note;
     private Button set;
     private Button weather;
-    private Button explore;
+    private Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         note=(Button)findViewById(R.id.btn_memo);
         set=(Button)findViewById(R.id.btn_set);
         weather=(Button)findViewById(R.id.btn_weather);
-        explore=(Button)findViewById(R.id.btn_exp);
+        home=(Button)findViewById(R.id.btn_home);
 
         note.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, NoteActivity.class);
+                intent.setClass(ExploreActivity.this, NoteActivity.class);
                 startActivity(intent);
 
             }
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, SetActivity.class);
+                intent.setClass(ExploreActivity.this, SetActivity.class);
                 startActivity(intent);
 
             }
@@ -46,17 +46,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, WeatherActivity.class);
+                intent.setClass(ExploreActivity.this, WeatherActivity.class);
                 startActivity(intent);
 
             }
         });
 
-        explore.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, ExploreActivity.class);
+                intent.setClass(ExploreActivity.this, MainActivity.class);
                 startActivity(intent);
 
             }

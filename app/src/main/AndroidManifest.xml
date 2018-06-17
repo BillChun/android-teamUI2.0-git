@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ExploreActivity" />
+        <activity android:name=".NoteActivity" />
+        <activity android:name=".NoteEditActivity" />
+        <activity android:name=".NoteItemActivity" />
+        <activity android:name=".SetActivity" />
+        <activity android:name=".SetBackActivity" />
+        <activity android:name=".SetMusicActivity" />
+        <activity android:name=".SetMusicFavoritesActivity" />
+        <activity android:name=".WeatherActivity"></activity>
     </application>
 
 </manifest>
